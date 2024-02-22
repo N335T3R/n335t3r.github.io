@@ -1,5 +1,5 @@
 *, *::before, *::after {
-    margin: none;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -12,8 +12,120 @@
 
     /* fonts */
     --KodeMono: "Kode Mono";
+    --Lebedev: "Sergej Lebedev";
 }
+
+
+
+a {
+    margin: 0;
+    padding: 0;
+
+    text-decoration: none;
+    user-select: none;
+    color: inherit;
+}
+ul > * {
+    text-decoration: none;
+    list-style: none;
+}
+h1 {
+    font-size: 2.5rem;
+    font-family: var(--Lebedev);
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+h5 {
+    font-size: 1rem;
+}
+
+
 
 body {
     background-color: var(--night);
+    overflow-x: hidden;
+    margin: 1rem;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--cambridge);
+}
+.name1 {
+    padding: 0 0 0.75rem 0;
+}
+.def1 {
+    margin: 1.5rem 0 0 0;
+}
+.anthony {
+    padding: 0 1rem 0 0;
+    text-align: right;
+    margin: 0 0 1.5rem 0;
+}
+.name2 {
+    padding: 0 0 0.25rem 0;
+}
+.def2 {
+    padding-top: 0.5rem;
+}
+.cap1, .cap2 {
+    font-size: 0.75rem;
+}
+
+/* MOBILE DEF : only displays if(screen.width<699px) */
+/* see @media only screen and (max-width: 699px) */
+
+nav {
+    justify-content: center;
+}
+.sitePages {
+    display: flex;
+    margin: 1rem;
+    padding: 0 3rem 0 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.sitePages > li > button {
+    padding: 0.25rem;
+    border: none;
+    background-color: inherit;
+
+    color: var(--amber);
+    font-size: 1rem;
+}
+.sitePages > li > button:hover {
+    box-shadow: 0.15rem 0.15rem 0.5rem var(--cambridge);
+    border: 0.05rem solid var(--amber);
+    border-radius: 0.15rem;
+}
+/* @media only screen and (min-width: 700px) {
+
+} */
+
+@media only screen and (max-width: 599px) {
+    .header {
+        margin: 1rem 1rem 0 1rem;
+    }
+    header > * {
+        max-height: 3rem
+    }
+    .anthony {
+        text-align: left;
+    }
+    .def2 {
+        padding: 1.5rem 0 0 0;
+        text-align: right;
+    }
 }
