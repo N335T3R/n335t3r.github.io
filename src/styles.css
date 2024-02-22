@@ -1,0 +1,19 @@
+*, *::before, *::after {
+    margin: none;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+    --night: rgba(17, 17, 17, 1);
+    --cambridge: rgb(115, 174, 135);
+    --amber: rgb(225, 191, 0);
+    --platinum: rgb(229, 228, 226);
+
+    /* fonts */
+    --KodeMono: "Kode Mono";
+}
+
+body {
+    background-color: var(--night);
+}
