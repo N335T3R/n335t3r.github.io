@@ -1,9 +1,10 @@
 const path = require('path');
 const common = require('./webpack.common');
 const { merge } = require('webpack-merge');
-const { CleanHtmlPlugin } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+
 
 module.exports = merge(common, {
     mode: "production",
@@ -12,23 +13,23 @@ module.exports = merge(common, {
         path: path.resolve(__dirname, 'dist'),
     },
     plugins: [new MiniCssExtractPlugin({
-        filename: '[name].[contentHash].css'
+        filename: "[name].[contentHash].css"
     }),
-    new CleanHtmlPlugin()],
+    new CleanWebpackPlugin()],
     module: {
         rules: [
             {
-                test: /\.css$/i,
-                use: [
-                    MiniCssExtractPlugin.loader, //Extract css into files
-                    "css-loader", //translates css to JS
-                ],
+            test: /\.css$/i,
+            use: [
+                MiniCssExtractPlugin.loader, //3. Extract css into files
+                "css-loader", //2. Turns css into commonjs
+              ],
             },
         ],
     },
     optimization: {
         minimizer: [
-            `...`, //preserves JS minimizer (terser)
+            `...`, //keeps terser (JS minimization)
             new CssMinimizerPlugin(),
         ],
     },
