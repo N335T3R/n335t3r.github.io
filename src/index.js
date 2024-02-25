@@ -1,4 +1,5 @@
 import "./styles.css";
-import mobilizeHeader from "./utils/mobilizeHeader";
+import populate from "./utils/headerUtils";
 
-mobilizeHeader();
+const nametag = document.getElementById('nametag');
+nametag.textContent = "neester";
