@@ -20,7 +20,7 @@ const nametag = document.getElementById('nametag');
 nametag.textContent = "n335t3r";
 const anthony = document.getElementById('anthony');
 // Vigenere Cypher functionality
-header.onmouseenter = () => {
+profContainer.onmouseenter = () => {
     var neeCipher = encode("neester");
     var antCipher = encode("anthonyhorner");
 
@@ -30,7 +30,7 @@ header.onmouseenter = () => {
     anthony.textContent = "";
     anthony.textContent = antCipher;
 };
-header.onmouseleave = () => {
+profContainer.onmouseleave = () => {
     nametag.textContent = "n335t3r";
     anthony.textContent = "Anthony Horner";
 };

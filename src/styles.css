@@ -69,6 +69,9 @@ header {
     margin: 0 0 2rem 0;
     align-items: center;
 }
+header > * {
+    user-select: none;
+}
 .profContainer {
     max-height: 5rem;
     padding: 0 0 0 0.5rem;
@@ -81,8 +84,6 @@ header {
     font-family: var(--Anta);
     color: var(--amber);
     text-align: center;
-
-    user-select: none;
 }
 .subline {
     display: flex;
@@ -99,6 +100,9 @@ header {
 
 nav {
     justify-content: center;
+}
+nav > * {
+    user-select: none;
 }
 .sitePages {
     display: flex;
