@@ -182,6 +182,11 @@ nav > * {
     padding: 0.25rem 0 0 0;
     color: var(--amber);
 }
+.vig {
+    margin: 1.5rem 0 0 0;
+    text-align: center;
+    color: var(--amber);
+}
 /* end home */
 
 
@@ -244,6 +249,16 @@ nav > * {
 
 
 
+/* blog */
+.crickets {
+    text-align: center;
+    color: var(--cambridge);
+}
+.chirp {
+    text-align: center;
+    color: var(--amber);
+}
+/* END blog */
 /* END CONTENT */
 
 

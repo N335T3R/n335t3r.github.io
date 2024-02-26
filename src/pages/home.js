@@ -30,4 +30,9 @@ export default function populateHome() {
     aboutTag.classList.add('aboutTag');
     aboutTag.textContent = "to learn more about your maitre d'!";
     checkAbout.appendChild(aboutTag);
+
+    const vig = document.createElement('h3');
+    vig.classList.add('vig');
+    vig.textContent = "Hover over my face to see my party trick (then click to learn more).";
+    content.appendChild(vig);
 }

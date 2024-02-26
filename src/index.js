@@ -45,8 +45,7 @@ profContainer.onmouseleave = () => {
 };
 // END HEADER
 
-
-
+populateHome();
 // CONTENT
 const home = document.getElementById('home');
 const about = document.getElementById('about');
