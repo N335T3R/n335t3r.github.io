@@ -90,6 +90,7 @@ header > * {
 }
 .subline > * {
     color: var(--cambridge);
+    font-family: var(--KodeMono);
 }
 .aka {
     margin: 0 1rem 0 0;
