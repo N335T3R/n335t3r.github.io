@@ -155,10 +155,11 @@ nav > * {
     display: block;
     margin: 3rem;
 }
-.whoAmI {
+.aboutQuestion {
     margin: 1rem 0 1rem 0;
 }
-.q1 {
+.question {
+    margin: 2.5rem 0 0 0;
     color: var(--cambridge);
 }
 .defNeester {
@@ -170,6 +171,7 @@ nav > * {
 }
 .nee {
     margin: 0 0.25rem 0 0;
+    color: var(--cambridge);
 }
 .neePronunc {
     font-size: 0.9rem;
@@ -184,6 +186,18 @@ nav > * {
 }
 .neeDefLines > li {
     font-size: 0.75rem;
+}
+
+/* whereAmI */
+.whereAnswer {
+    margin: 1rem 0 0 0;
+}
+.whereAnswer > p {
+    color: var(--amber);
+    font-size: 0.85rem;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.15rem;
+    text-indent: 1.5rem;
 }
 
 /* END about */

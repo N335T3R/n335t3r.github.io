@@ -15,7 +15,7 @@ export default function populateAbout() {
     aboutContent.appendChild(whoAmI);
 
     const q1 = document.createElement('h3');
-    q1.classList.add('q1');
+    q1.classList.add('question');
     whoAmI.appendChild(q1);
     q1.textContent = "You might be asking, what is a n335t3r?";
 
@@ -88,7 +88,10 @@ export default function populateAbout() {
     antLine1.textContent = "simultaneously a learner, artist, thinker";
     const antLine2 = document.createElement('li');
     antDefLines.appendChild(antLine2);
-    antLine2.textContent = "currently, a seeker of entry-level front-end web and/or javascript development";
+    antLine2.textContent = "B.A., English (Saint Vincent College | 2018)";
+    const antLine3 = document.createElement('li');
+    antDefLines.appendChild(antLine3);
+    antLine3.textContent = "currently, a seeker of entry-level front-end web and/or javascript development";
 
 
 
@@ -100,9 +103,25 @@ export default function populateAbout() {
     whereAmI.classList.add('whereAmI');
     aboutContent.appendChild(whereAmI);
 
+    const q2 = document.createElement('h3');
+    q2.classList.add('question');
+    whereAmI.appendChild(q2);
+    q2.textContent = "You might be asking, what is this place?";
+
+    const whereAnswer = document.createElement('div');
+    whereAnswer.classList.add('whereAnswer');
+    whereAmI.appendChild(whereAnswer);
+
+
+    const whereP1 = document.createElement('p');
+    whereAnswer.appendChild(whereP1);
+    whereP1.textContent = "This is a humble interweb nexus I call home. I created this place with the combined powers of javascript, webpack5, html, and css. There’s not much here now, but I find the best homes are more populated by people than things. At the bottom of this page, you can connect with me via a slew of social media options. Above, you can explore from the navigation bar a modest selection of content hosted herein. If you want to see my party trick, hover your mouse over over the profile photo in the top left corner of this page then click to learn more about the Vigenere cipher. You can also explore willy-nilly, as the spirit moves you. I’m just happy you’re here.";
+    const whereP2 = document.createElement('p');
+    whereAnswer.appendChild(whereP2);
+    whereP2.textContent = "To send recommendations in the realm of books, tutorials, music, or site features you’d like to see incorporated here, send me a message via one of my social media links!";
 
     // Contact
     const contact = document.createElement('div');
-    contact.classList.add('contact');
+    contact.classList.add('aboutQuestion');
     aboutContent.appendChild(contact);
 }
