@@ -1,6 +1,7 @@
 *, *::before, *::after {
     margin: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 :root {
@@ -150,12 +151,44 @@ nav > * {
 
 
 /* CONTENT */
-/* about */
 .content {
     display: block;
     margin: 3rem;
     padding: 0 0 0 0.5rem;
+}
 
+/* home */
+.live {
+    text-align: center;
+    color: var(--amber);
+}
+.more {
+    text-align: center;
+    color: var(--amber);
+}
+.checkAbout {
+    display: flex;
+    margin: 1rem 0 0 0;
+    justify-content: center;
+}
+.aboutLink {
+    color: var(--cambridge);
+}
+.aboutLink:hover {
+    cursor: pointer;
+}
+.aboutTag {
+    margin: 0 0 0 0.5rem;
+    padding: 0.25rem 0 0 0;
+    color: var(--amber);
+}
+/* end home */
+
+
+
+
+/* about */
+.aboutContent {
     max-height: 18rem;
     overflow-y: scroll;
 
@@ -196,7 +229,6 @@ nav > * {
 .neeDefLines > li {
     font-size: 0.75rem;
 }
-
 /* whereAmI */
 .qAnswer {
     margin: 1rem 0 0 0;
@@ -208,8 +240,9 @@ nav > * {
     line-height: 1.15rem;
     text-indent: 1.5rem;
 }
-
 /* END about */
+
+
 
 /* END CONTENT */
 
