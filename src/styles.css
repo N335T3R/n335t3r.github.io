@@ -66,6 +66,7 @@ body {
 
 header {
     display: block;
+    margin: 0 0 1.5rem 0;
 }
 .nametag {
     font-family: var(--Anta);
