@@ -27,6 +27,8 @@
     font-style: normal;
   }
 
+
+
 a {
     margin: 0;
     padding: 0;
@@ -64,6 +66,9 @@ body {
     margin: 1rem;
 }
 
+
+/* HEADER */
+
 header {
     display: flex;
     margin: 0 0 2rem 0;
@@ -99,6 +104,11 @@ header > * {
     margin: 0 1rem 0 0;
 }
 
+/* END HEADER */
+
+
+
+/* NAV */
 nav {
     justify-content: center;
 }
@@ -125,7 +135,37 @@ nav > * {
     border: 0.05rem solid var(--amber);
     border-radius: 0.15rem;
 }
+/* END NAV */
 
+
+
+/* CONTENT */
+
+/* END CONTENT */
+
+
+
+/* SOCIALS */
+.socials {
+    display: flex;
+    max-height: 5rem;
+    margin: 3rem 0 0 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.git > img {
+    max-height: 2rem;
+}
+.kofi > img {
+    max-height: 1.5rem;
+}
+.insta > img {
+    max-height: 3rem;
+}
+.goodreads > img {
+    max-height: 1.5rem;
+}
+/* END SOCIALS */
 
 /* @media only screen and (min-width: 700px) {
 

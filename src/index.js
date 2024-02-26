@@ -1,5 +1,11 @@
 import "./styles.css";
+
 import Profile from "./assets/n335t3rProfile.png";
+import Github from "./assets/githubGreen.png";
+import KofiCup from "./assets/kofi.png";
+import Instagram from "./assets/instagram.png";
+import GoodreadsLogo from "./assets/goodreads.png";
+
 import makeTable from "./utils/headerUtils";
 import { encode } from "./utils/headerUtils";
 
@@ -45,5 +51,23 @@ profContainer.onmouseleave = () => {
 
 
 // SOCIALS
+const git = document.getElementById('git');
+const kofi = document.getElementById('kofi');
+const insta = document.getElementById('insta');
+const goodreads = document.getElementById('goodreads');
+
+const gitLogo = new Image();
+gitLogo.src = Github;
+const kofiLogo = new Image();
+kofiLogo.src = KofiCup;
+const instaLogo = new Image();
+instaLogo.src = Instagram;
+const goodreadsBook = new Image();
+goodreadsBook.src = GoodreadsLogo;
+
+git.appendChild(gitLogo);
+kofi.appendChild(kofiLogo);
+insta.appendChild(instaLogo);
+goodreads.appendChild(goodreadsBook);
 
 // END SOCIALS
