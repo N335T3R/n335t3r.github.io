@@ -5,10 +5,14 @@ import Github from "./assets/githubGreen.png";
 import KofiCup from "./assets/kofi.png";
 import Instagram from "./assets/instagram.png";
 import GoodreadsLogo from "./assets/goodreads.png";
+import LinkedInPlug from "./assets/LI-Logo.png";
 
 import makeTable from "./utils/headerUtils";
 import { encode } from "./utils/headerUtils";
 
+import populateHome from "./pages/home";
+import populateAbout from "./pages/about";
+import populateBlog from "./pages/blog";
 
 
 
@@ -19,7 +23,6 @@ const profContainer = document.getElementById('profContainer');
 const profPic = new Image();
 profPic.src = Profile;
 profContainer.appendChild(profPic);
-
 
 // n335t3r name
 const nametag = document.getElementById('nametag');
@@ -45,6 +48,19 @@ profContainer.onmouseleave = () => {
 
 
 // CONTENT
+const home = document.getElementById('home');
+const about = document.getElementById('about');
+const blog = document.getElementById('blog');
+
+home.addEventListener('click', () => {
+    populateHome();
+});
+about.addEventListener('click', () => {
+    populateAbout();
+});
+blog.addEventListener('click', () => {
+    populateBlog();
+});
 
 // END CONTENT
 
@@ -55,6 +71,7 @@ const git = document.getElementById('git');
 const kofi = document.getElementById('kofi');
 const insta = document.getElementById('insta');
 const goodreads = document.getElementById('goodreads');
+const linkedIn = document.getElementById('linkedIn');
 
 const gitLogo = new Image();
 gitLogo.src = Github;
@@ -64,12 +81,12 @@ const instaLogo = new Image();
 instaLogo.src = Instagram;
 const goodreadsBook = new Image();
 goodreadsBook.src = GoodreadsLogo;
+const linkedInLogo = new Image();
+linkedInLogo.src = LinkedInPlug;
 
 git.appendChild(gitLogo);
 kofi.appendChild(kofiLogo);
 insta.appendChild(instaLogo);
 goodreads.appendChild(goodreadsBook);
-
-
-
+linkedIn.appendChild(linkedInLogo);
 // END SOCIALS
