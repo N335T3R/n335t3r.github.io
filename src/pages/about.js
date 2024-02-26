@@ -54,6 +54,47 @@ export default function populateAbout() {
 
 
 
+
+
+
+    const defAnthony = document.createElement('div');
+    defAnthony.classList.add('defNeester');
+    whoAmI.appendChild(defAnthony);
+    
+    const entryAnt = document.createElement('div');
+    entryAnt.classList.add('entryNee');
+    defAnthony.appendChild(entryAnt);
+    const ant = document.createElement('h4');
+    ant.classList.add('nee');
+    entryAnt.appendChild(ant);
+    ant.textContent = "Anthony Horner";
+    const antPronunc = document.createElement('p');
+    antPronunc.classList.add('neePronunc');
+    entryAnt.appendChild(antPronunc);
+    antPronunc.textContent = "| KAN-deh-diht |";
+
+    const antDef = document.createElement('div');
+    antDef.classList.add('neeDef');
+    defAnthony.appendChild(antDef);
+    const antArt = document.createElement('p');
+    antArt.classList.add('neeArt');
+    antDef.appendChild(antArt);
+    antArt.textContent = "(noun)";
+    const antDefLines = document.createElement('ol');
+    antDefLines.classList.add('neeDefLines');
+    antDef.appendChild(antDefLines);
+    const antLine1 = document.createElement('li');
+    antDefLines.appendChild(antLine1);
+    antLine1.textContent = "simultaneously a learner, artist, thinker";
+    const antLine2 = document.createElement('li');
+    antDefLines.appendChild(antLine2);
+    antLine2.textContent = "currently, a seeker of entry-level front-end web and/or javascript development";
+
+
+
+
+
+
     // WhereAmI
     const whereAmI = document.createElement('div');
     whereAmI.classList.add('whereAmI');
