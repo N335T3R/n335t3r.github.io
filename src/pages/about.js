@@ -47,7 +47,7 @@ export default function populateAbout() {
     neeDef.appendChild(neeDefLines);
     const neeLine1 = document.createElement('li');
     neeDefLines.appendChild(neeLine1);
-    neeLine1.textContent = "etymology & semantics a withheld mystery";
+    neeLine1.textContent = "etymology & semantics a withheld mystery (for now)";
     const neeLine2 = document.createElement('li');
     neeDefLines.appendChild(neeLine2);
     neeLine2.textContent = "online pseudonym for (see next entry)";
@@ -96,8 +96,6 @@ export default function populateAbout() {
 
 
 
-
-
     // WhereAmI
     const whereAmI = document.createElement('div');
     whereAmI.classList.add('whereAmI');
@@ -109,7 +107,7 @@ export default function populateAbout() {
     q2.textContent = "You might be asking, what is this place?";
 
     const whereAnswer = document.createElement('div');
-    whereAnswer.classList.add('whereAnswer');
+    whereAnswer.classList.add('qAnswer');
     whereAmI.appendChild(whereAnswer);
 
 
@@ -120,8 +118,28 @@ export default function populateAbout() {
     whereAnswer.appendChild(whereP2);
     whereP2.textContent = "To send recommendations in the realm of books, tutorials, music, or site features you’d like to see incorporated here, send me a message via one of my social media links!";
 
+
+
+
     // Contact
     const contact = document.createElement('div');
-    contact.classList.add('aboutQuestion');
+    contact.classList.add('aboutQuestion', 'contact');
     aboutContent.appendChild(contact);
+
+    const q3 = document.createElement('h3');
+    q3.classList.add('question');
+    contact.appendChild(q3);
+    q3.textContent = "You might want to hire/collaborate/ask a question?";
+
+
+    const contactAnswer = document.createElement('div');
+    contactAnswer.classList.add('qAnswer');
+    contact.appendChild(contactAnswer);
+
+    const contactP1 = document.createElement('p');
+    contactAnswer.appendChild(contactP1);
+    contactP1.textContent = "Wow, great! I LOVE making new connections, especially when connection leads to fun projects! I’m hoping to soon incorporate a contact widget to provide a more personalized experience for my guests who wish to send professional inquiries. Until then, the social media options provided herein are a perfectly suitable option for soliciting my attention. The choice of via della communicazione is yours, but know I’m more likely to seriously consider inquiries from verified user profiles.";
+    const contactP2 = document.createElement('p');
+    contactAnswer.appendChild(contactP2);
+    contactP2.textContent = "For hiring inquiries, reach out via LinkedIn.";
 }

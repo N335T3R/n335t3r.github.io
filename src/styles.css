@@ -154,12 +154,21 @@ nav > * {
 .content {
     display: block;
     margin: 3rem;
+    padding: 0 0 0 0.5rem;
+
+    max-height: 18rem;
+    overflow-y: scroll;
+
+    scrollbar-color: var(--night) var(--cambridge);
+    scrollbar-width: thin;
 }
 .aboutQuestion {
     margin: 1rem 0 1rem 0;
 }
-.question {
+.whereAmI, .contact {
     margin: 2.5rem 0 0 0;
+}
+.question {
     color: var(--cambridge);
 }
 .defNeester {
@@ -189,10 +198,10 @@ nav > * {
 }
 
 /* whereAmI */
-.whereAnswer {
+.qAnswer {
     margin: 1rem 0 0 0;
 }
-.whereAnswer > p {
+.qAnswer > p {
     color: var(--amber);
     font-size: 0.85rem;
     font-family: 'Times New Roman', Times, serif;
