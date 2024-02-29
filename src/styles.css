@@ -207,6 +207,7 @@ nav > * {
     margin: 2.5rem 0 0 0;
 }
 .question {
+    font-family: var(--Anta);
     color: var(--cambridge);
 }
 .defNeester {
@@ -218,18 +219,23 @@ nav > * {
 }
 .nee {
     margin: 0 0.25rem 0 0;
+    font-family: var(--KodeMono);
+    font-size: 1rem;
     color: var(--cambridge);
 }
 .ant {
     margin: 0;
+    font-family: var(--KodeMono);
+    font-size: 1rem;
     color: var(--cambridge);
 }
 .neePronunc {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     padding: 0 0 0 0;
 }
 .antPronunc {
     margin: 0;
+    font-size: 0.8rem;
 }
 .neeDef {
     display: block;
@@ -258,10 +264,12 @@ nav > * {
 
 /* blog */
 .crickets {
+    font-family: var(--KodeMono);
     text-align: center;
     color: var(--cambridge);
 }
 .chirp {
+    font-family: var(--Anta);
     text-align: center;
     color: var(--amber);
 }
@@ -300,6 +308,20 @@ nav > * {
 
 } */
 
-/* @media only screen and (max-width: 599px) {
-
-} */
+  @media only screen and (max-width: 599px) {
+    .git > img {
+        max-height: 1.5rem;
+    }
+    .kofi > img {
+        max-height: 1rem;
+    }
+    .insta > img {
+        max-height: 2rem;
+    }
+    .goodreads > img {
+        max-height: .85rem;
+    }
+    .linkedIn > img {
+        max-height: 1rem;
+    }
+}
