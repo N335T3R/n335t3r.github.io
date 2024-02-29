@@ -315,9 +315,17 @@ nav > * {
 } */
 
   @media only screen and (max-width: 599px) {
+    /* header */
+    .profContainer > img {
+        max-height: 6rem;
+        margin: 0 1rem 0 0;
+    }
     .nametag, .subline {
         text-align: left;
     }
+
+
+    /* socials */
     .git > img {
         max-height: 1.5rem;
     }
