@@ -184,8 +184,13 @@ nav > * {
 }
 .vig {
     margin: 1.5rem 0 0 0;
-    text-align: center;
+
+    text-align: left;
     color: var(--amber);
+    font-family: var(--KodeMono);
+}
+.vigDir {
+    color: var(--cambridge);
 }
 /* end home */
 

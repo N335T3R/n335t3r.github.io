@@ -14,25 +14,27 @@ export default function populateHome() {
     more.textContent = "and more is coming (including some blog content)!";
     content.appendChild(more);
 
-    const checkAbout = document.createElement('div');
-    checkAbout.classList.add('checkAbout');
-    content.appendChild(checkAbout);
+    
 
-    const aboutLink = document.createElement('h3');
-    aboutLink.classList.add('aboutLink');
-    aboutLink.textContent = "Click HERE";
-    aboutLink.onclick = () => {
-        populateAbout();
-    };
-    checkAbout.appendChild(aboutLink);
-
-    const aboutTag = document.createElement('h4');
-    aboutTag.classList.add('aboutTag');
-    aboutTag.textContent = "to learn more about your maitre d'!";
-    checkAbout.appendChild(aboutTag);
-
-    const vig = document.createElement('h3');
+    const vig = document.createElement('h4');
     vig.classList.add('vig');
-    vig.textContent = "Hover over my face to see my party trick (then click to learn more).";
+    vig.textContent = "Click my face to see my party trick.";
     content.appendChild(vig);
+
+    const vigInstruct = document.createElement('ul');
+    vigInstruct.classList.add('vigInstruct');
+    content.appendChild(vigInstruct);
+
+    const vigDir1 = document.createElement('li');
+    vigDir1.classList.add('vigDir');
+    vigInstruct.appendChild(vigDir1);
+    vigDir1.textContent = "Click again to generate a new cipher.";
+    const vigDir2 = document.createElement('li');
+    vigDir2.classList.add('vigDir');
+    vigInstruct.appendChild(vigDir2);
+    vigDir2.textContent = "Double-click to return things to normal.";
+    const vigDir3 = document.createElement('li');
+    vigDir3.classList.add('vigDir');
+    vigInstruct.appendChild(vigDir3);
+    vigDir3.textContent = "Click my face to learn more about the Vigenere cipher.";
 }

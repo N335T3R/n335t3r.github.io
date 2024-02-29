@@ -31,7 +31,7 @@ const nametag = document.getElementById('nametag');
 nametag.textContent = "n335t3r";
 const anthony = document.getElementById('anthony');
 // Vigenere Cypher functionality
-profContainer.onmouseenter = () => {
+namespace.onclick = () => {
     var neeCipher = encode("neester");
     var antCipher = encode("anthonyhorner");
 
@@ -41,7 +41,7 @@ profContainer.onmouseenter = () => {
     anthony.textContent = "";
     anthony.textContent = antCipher;
 };
-profContainer.onmouseleave = () => {
+namespace.ondblclick = () => {
     nametag.textContent = "n335t3r";
     anthony.textContent = "Anthony Horner";
 };
