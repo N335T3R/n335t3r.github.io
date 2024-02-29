@@ -11,7 +11,7 @@ export default function populateHome() {
 
     const more = document.createElement('h4');
     more.classList.add('more');
-    more.textContent = "and more is coming (including some blog content)!";
+    more.textContent = "and more is coming!";
     content.appendChild(more);
 
     
