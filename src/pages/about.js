@@ -113,7 +113,7 @@ export default function populateAbout() {
 
     const whereP1 = document.createElement('p');
     whereAnswer.appendChild(whereP1);
-    whereP1.textContent = "This is a humble interweb nexus I call home. I created this place with the combined powers of javascript, webpack5, html, and css. There’s not much here now, but I find the best homes are more populated by people than things. At the bottom of this page, you can connect with me via a slew of social media options. Above, you can explore from the navigation bar a modest selection of content hosted herein. If you want to see my party trick, hover your mouse over over the profile photo in the top left corner of this page then click to learn more about the Vigenere cipher. You can also explore willy-nilly, as the spirit moves you. I’m just happy you’re here.";
+    whereP1.textContent = "This is a humble interweb nexus I call home. I created this place with the combined powers of javascript, webpack5, html, and css. There’s not much here now, but I find the best homes are more populated by people than things. At the bottom of this page, you can connect with me via a slew of social media options. Above, you can explore from the navigation bar a modest selection of content hosted herein. If you want to see my party trick, click my name. Then click my face to learn more about the Vigenere cipher. You can also explore willy-nilly, as the spirit moves you. I’m just happy you’re here.";
     const whereP2 = document.createElement('p');
     whereAnswer.appendChild(whereP2);
     whereP2.textContent = "To send recommendations in the realm of books, tutorials, music, or site features you’d like to see incorporated here, send me a message via one of my social media links!";
