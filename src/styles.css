@@ -185,12 +185,13 @@ nav > * {
 .vig {
     margin: 1.5rem 0 0 0;
 
-    text-align: left;
+    text-align: center;
     color: var(--amber);
     font-family: var(--KodeMono);
 }
 .vigDir {
     color: var(--cambridge);
+    text-align: center;
 }
 /* end home */
 
@@ -323,6 +324,18 @@ nav > * {
     .nametag, .subline {
         text-align: left;
     }
+
+
+
+    /* CONTENT */
+    /* HOME */
+    .vig {
+        text-align: left;
+    }
+    .vigDir {
+        text-align: left;
+    }
+
 
 
     /* socials */
