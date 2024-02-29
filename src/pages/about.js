@@ -71,7 +71,7 @@ export default function populateAbout() {
     const antPronunc = document.createElement('p');
     antPronunc.classList.add('antPronunc');
     entryAnt.appendChild(antPronunc);
-    antPronunc.textContent = "| KAN-deh-diht |";
+    antPronunc.textContent = "| kan-deh-diht |";
 
     const antDef = document.createElement('div');
     antDef.classList.add('neeDef');
