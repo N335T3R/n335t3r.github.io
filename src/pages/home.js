@@ -18,7 +18,7 @@ export default function populateHome() {
 
     const vig = document.createElement('h4');
     vig.classList.add('vig');
-    vig.textContent = "Click my face to see my party trick.";
+    vig.textContent = "Click my name to see my party trick.";
     content.appendChild(vig);
 
     const vigInstruct = document.createElement('ul');
