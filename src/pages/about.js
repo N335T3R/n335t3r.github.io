@@ -65,7 +65,7 @@ export default function populateAbout() {
     entryAnt.classList.add('entryNee');
     defAnthony.appendChild(entryAnt);
     const ant = document.createElement('h4');
-    ant.classList.add('nee');
+    ant.classList.add('ant');
     entryAnt.appendChild(ant);
     ant.textContent = "Anthony Horner";
     const antPronunc = document.createElement('p');
