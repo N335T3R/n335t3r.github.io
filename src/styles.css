@@ -228,6 +228,9 @@ nav > * {
     font-size: 0.9rem;
     padding: 0 0 0 0;
 }
+.antPronunc {
+    margin: 0;
+}
 .neeDef {
     display: block;
 }

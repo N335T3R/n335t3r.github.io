@@ -69,7 +69,7 @@ export default function populateAbout() {
     entryAnt.appendChild(ant);
     ant.textContent = "Anthony Horner";
     const antPronunc = document.createElement('p');
-    antPronunc.classList.add('neePronunc');
+    antPronunc.classList.add('antPronunc');
     entryAnt.appendChild(antPronunc);
     antPronunc.textContent = "| KAN-deh-diht |";
 
