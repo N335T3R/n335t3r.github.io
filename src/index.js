@@ -9,10 +9,12 @@ import LinkedInPlug from "./assets/LI-Logo.png";
 
 import makeTable from "./utils/headerUtils";
 import { encode } from "./utils/headerUtils";
+import sizeAdjust from "./utils/sizeAdjust";
 
 import populateHome from "./pages/home";
 import populateAbout from "./pages/about";
 import populateBlog from "./pages/blog";
+import { size } from "lodash";
 
 
 
@@ -45,6 +47,8 @@ profContainer.onmouseleave = () => {
 };
 // END HEADER
 
+
+sizeAdjust();
 populateHome();
 // CONTENT
 const home = document.getElementById('home');
