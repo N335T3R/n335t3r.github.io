@@ -241,6 +241,7 @@ nav > * {
 .antPronunc {
     margin: 0;
     font-size: 0.8rem;
+    text-align: left;
 }
 .neeDef {
     display: block;
