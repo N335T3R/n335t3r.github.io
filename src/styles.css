@@ -315,6 +315,9 @@ nav > * {
 } */
 
   @media only screen and (max-width: 599px) {
+    .nametag, .subline {
+        text-align: left;
+    }
     .git > img {
         max-height: 1.5rem;
     }
