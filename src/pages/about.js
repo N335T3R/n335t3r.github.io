@@ -1,3 +1,6 @@
+import UnorderedList from "./../utils/unorderedList.js";
+import OrderedList from "./../utils/orderedList.js";
+
 export default function populateAbout() {
     const content = document.getElementById('content');
     content.innerHTML = "";
@@ -19,6 +22,7 @@ export default function populateAbout() {
     whoAmI.appendChild(q1);
     q1.textContent = "You might be asking, what is a n335t3r?";
 
+    // n335t3r definition
     const defNeester = document.createElement('div');
     defNeester.classList.add('defNeester');
     whoAmI.appendChild(defNeester);
@@ -42,21 +46,17 @@ export default function populateAbout() {
     neeArt.classList.add('neeArt');
     neeDef.appendChild(neeArt);
     neeArt.textContent = "(unknown)";
-    const neeDefLines = document.createElement('ol');
+
+    // neeDef definition list
+    const neeLine1 = "etymology & semantics a withheld mystery (for now)";
+    const neeLine2 = "online pseudonym for (see next entry)";
+
+    const neeDefLines = new OrderedList(neeLine1, neeLine2);
     neeDefLines.classList.add('neeDefLines');
     neeDef.appendChild(neeDefLines);
-    const neeLine1 = document.createElement('li');
-    neeDefLines.appendChild(neeLine1);
-    neeLine1.textContent = "etymology & semantics a withheld mystery (for now)";
-    const neeLine2 = document.createElement('li');
-    neeDefLines.appendChild(neeLine2);
-    neeLine2.textContent = "online pseudonym for (see next entry)";
 
 
-
-
-
-
+    // anthony definition
     const defAnthony = document.createElement('div');
     defAnthony.classList.add('defNeester');
     whoAmI.appendChild(defAnthony);
@@ -80,18 +80,17 @@ export default function populateAbout() {
     antArt.classList.add('neeArt');
     antDef.appendChild(antArt);
     antArt.textContent = "(noun)";
-    const antDefLines = document.createElement('ol');
+
+
+    // antDef definition list
+    const antLine1 = "simultaneously a learner, artist, thinker";
+    const antLine2 = "B.A., English (Saint Vincent College | 2018)";
+    const antLine3 = "currently, a seeker of entry-level front-end web and/or javascript development";
+
+    const antDefLines = new OrderedList(antLine1, antLine2, antLine3);
     antDefLines.classList.add('neeDefLines');
     antDef.appendChild(antDefLines);
-    const antLine1 = document.createElement('li');
-    antDefLines.appendChild(antLine1);
-    antLine1.textContent = "simultaneously a learner, artist, thinker";
-    const antLine2 = document.createElement('li');
-    antDefLines.appendChild(antLine2);
-    antLine2.textContent = "B.A., English (Saint Vincent College | 2018)";
-    const antLine3 = document.createElement('li');
-    antDefLines.appendChild(antLine3);
-    antLine3.textContent = "currently, a seeker of entry-level front-end web and/or javascript development";
+
 
 
 

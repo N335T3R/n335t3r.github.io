@@ -1,7 +1,7 @@
-export default class UnorderedList {
+export default class OrderedList {
     constructor({}) {
         this.array = [...arguments];
-        this.list = document.createElement('ul');
+        this.list = document.createElement('ol');
 
         for (let i = 0; i < this.array.length; i++) {
             var item = document.createElement('li');
