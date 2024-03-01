@@ -5,7 +5,7 @@ export default function sizeAdjust() {
 
     if (screen.width < 400) {
         header.width = 300;
-        content.width = 300;
+        content.width = 350;
         socials.width = 300;
     }
 }
