@@ -1,5 +1,4 @@
 import UnorderedList from "../utils/unorderedList";
-import populateAbout from "./about";
 
 export default function populateHome() {
     const content = document.getElementById('content');
