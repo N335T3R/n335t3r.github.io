@@ -253,6 +253,7 @@ nav > * {
 }
 .neeDefLines > li {
     font-size: 0.75rem;
+    font-family: sans-serif;
 }
 /* whereAmI */
 .qAnswer {
