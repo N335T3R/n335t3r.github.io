@@ -189,7 +189,7 @@ nav > * {
     color: var(--amber);
     font-family: var(--KodeMono);
 }
-.vigDir {
+.vigInstruct > li {
     color: var(--cambridge);
     text-align: center;
 }
@@ -333,7 +333,7 @@ nav > * {
     .vig {
         text-align: left;
     }
-    .vigDir {
+    .vigInstruct > li {
         text-align: left;
     }
 

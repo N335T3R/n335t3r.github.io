@@ -1,3 +1,4 @@
+import UnorderedList from "../utils/unorderedList";
 import populateAbout from "./about";
 
 export default function populateHome() {
@@ -21,20 +22,12 @@ export default function populateHome() {
     vig.textContent = "Click my name to see my party trick.";
     content.appendChild(vig);
 
-    const vigInstruct = document.createElement('ul');
+
+    const vigDir1 = "Click again to generate a new cipher.";
+    const vigDir2 = "Double-click to return things to normal.";
+    const vigDir3 = "Click my face to learn more about the Vigenere cipher.";
+
+    const vigInstruct = new UnorderedList(vigDir1, vigDir2, vigDir3);
     vigInstruct.classList.add('vigInstruct');
     content.appendChild(vigInstruct);
-
-    const vigDir1 = document.createElement('li');
-    vigDir1.classList.add('vigDir');
-    vigInstruct.appendChild(vigDir1);
-    vigDir1.textContent = "Click again to generate a new cipher.";
-    const vigDir2 = document.createElement('li');
-    vigDir2.classList.add('vigDir');
-    vigInstruct.appendChild(vigDir2);
-    vigDir2.textContent = "Double-click to return things to normal.";
-    const vigDir3 = document.createElement('li');
-    vigDir3.classList.add('vigDir');
-    vigInstruct.appendChild(vigDir3);
-    vigDir3.textContent = "Click my face to learn more about the Vigenere cipher.";
 }
