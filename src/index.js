@@ -16,6 +16,10 @@ import populateAbout from "./pages/about";
 import populateBlog from "./pages/blog";
 import { size } from "lodash";
 
+import weatherFetch from "./utils/weatherUtils";
+import { skimWeatherData } from "./utils/weatherUtils";
+import { updateWeatherDiv } from "./utils/weatherUtils";
+
 
 
 // HEADER
@@ -45,6 +49,16 @@ namespace.ondblclick = () => {
     nametag.textContent = "n335t3r";
     anthony.textContent = "Anthony Horner";
 };
+
+var weatherData = [];
+weatherFetch().then((data) => {
+    // console.log(data);
+    weatherData = skimWeatherData(weatherData, data);
+    console.log(weatherData);
+    updateWeatherDiv(weatherData);
+}).catch((err) => {
+    console.log('error:', err);
+});
 // END HEADER
 
 
