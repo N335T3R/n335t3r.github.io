@@ -66,18 +66,12 @@ sizeAdjust();
 populateHome();
 // CONTENT
 const home = document.getElementById('home');
-const about = document.getElementById('about');
-const blog = document.getElementById('blog');
+
 
 home.addEventListener('click', () => {
     populateHome();
 });
-about.addEventListener('click', () => {
-    populateAbout();
-});
-blog.addEventListener('click', () => {
-    populateBlog();
-});
+
 
 // END CONTENT
 
@@ -85,25 +79,25 @@ blog.addEventListener('click', () => {
 
 // SOCIALS
 const git = document.getElementById('git');
-const kofi = document.getElementById('kofi');
+// const kofi = document.getElementById('kofi');
 const insta = document.getElementById('insta');
 const goodreads = document.getElementById('goodreads');
-const linkedIn = document.getElementById('linkedIn');
+// const linkedIn = document.getElementById('linkedIn');
 
 const gitLogo = new Image();
 gitLogo.src = Github;
-const kofiLogo = new Image();
-kofiLogo.src = KofiCup;
+// const kofiLogo = new Image();
+// kofiLogo.src = KofiCup;
 const instaLogo = new Image();
 instaLogo.src = Instagram;
 const goodreadsBook = new Image();
 goodreadsBook.src = GoodreadsLogo;
-const linkedInLogo = new Image();
-linkedInLogo.src = LinkedInPlug;
+// const linkedInLogo = new Image();
+// linkedInLogo.src = LinkedInPlug;
 
 git.appendChild(gitLogo);
-kofi.appendChild(kofiLogo);
+// kofi.appendChild(kofiLogo);
 insta.appendChild(instaLogo);
 goodreads.appendChild(goodreadsBook);
-linkedIn.appendChild(linkedInLogo);
+// linkedIn.appendChild(linkedInLogo);
 // END SOCIALS

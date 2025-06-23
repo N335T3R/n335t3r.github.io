@@ -339,18 +339,18 @@ nav > * {
 .git > img {
     max-height: 2rem;
 }
-.kofi > img {
+/* .kofi > img {
     max-height: 1.5rem;
-}
+} */
 .insta > img {
     max-height: 3rem;
 }
 .goodreads > img {
     max-height: 1.25rem;
 }
-.linkedIn > img {
+/* .linkedIn > img {
     max-height: 1.5rem;
-}
+} */
 /* END SOCIALS */
 
 /* @media only screen and (min-width: 700px) {
@@ -384,16 +384,16 @@ nav > * {
     .git > img {
         max-height: 1.5rem;
     }
-    .kofi > img {
+    /* .kofi > img {
         max-height: 1rem;
-    }
+    } */
     .insta > img {
         max-height: 2rem;
     }
     .goodreads > img {
         max-height: .85rem;
     }
-    .linkedIn > img {
+    /* .linkedIn > img {
         max-height: 1rem;
-    }
+    } */
 }
